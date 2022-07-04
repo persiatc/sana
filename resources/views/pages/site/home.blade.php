@@ -10,8 +10,18 @@
     <div class="content">
         <!-- BEGIN: Top Bar -->
         @include('partials.topBarSide')
+       
+      
+
         <!-- END: Top Bar -->
         <div class="grid grid-cols-12 gap-6">
+             <div class="col-span-12 xxl:col-span-9">
+                <div class="alert alert-outline-success alert-dismissible show flex items-center mb-2" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle w-6 h-6 ml-2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> 
+                    به سامانه نیروی انسانی ارتباطات پرشیا خوش آمدید!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x w-4 h-4"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> </button>
+                </div>
+             </div>
             <div class="col-span-12 xxl:col-span-9">
                 <div class="grid grid-cols-12 gap-6">
                     <!-- BEGIN: General Report -->
@@ -83,7 +93,7 @@
                     </div>
                     <!-- END: General Report -->
                     <!-- BEGIN: Sales Report -->
-                    <div class="col-span-12 lg:col-span-6 mt-8">
+                    {{-- <div class="col-span-12 lg:col-span-6 mt-8">
                         <div class="intro-y block sm:flex items-center h-10">
                             <h2 class="text-lg font-medium truncate ml-5">
                                گزارش فروش
@@ -117,10 +127,10 @@
                                 <canvas id="report-line-chart" height="169" class="mt-6"></canvas>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: Sales Report -->
                     <!-- BEGIN: Weekly Top Seller -->
-                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-8">
+                    {{-- <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-8">
                         <div class="intro-y flex items-center h-10">
                             <h2 class="text-lg font-medium truncate ml-5">
                                 فروش بالای هفتگی
@@ -150,10 +160,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: Weekly Top Seller -->
                     <!-- BEGIN: Sales Report -->
-                    <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-8">
+                    {{-- <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-8">
                         <div class="intro-y flex items-center h-10">
                             <h2 class="text-lg font-medium truncate ml-5">
                                گزارش فروش
@@ -183,10 +193,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: Sales Report -->
                     <!-- BEGIN: Official Store -->
-                    <div class="col-span-12 xl:col-span-8 mt-6">
+                    {{-- <div class="col-span-12 xl:col-span-8 mt-6">
                         <div class="intro-y block sm:flex items-center h-10">
                             <h2 class="text-lg font-medium truncate ml-5">
                                 فروشگاه رسمی 
@@ -200,10 +210,10 @@
                             <div>250 فروشگاه رسمی در 21 کشور ، برای مشاهده جزئیات مکان ، روی نشانگر کلیک کنید.</div>
                             <div class="report-maps mt-5 bg-gray-200 rounded-md" data-center="-6.2425342, 106.8626478" data-sources="/dist/json/location.json"></div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: Official Store -->
                     <!-- BEGIN: Weekly Best Sellers -->
-                    <div class="col-span-12 xl:col-span-4 mt-6">
+                    {{-- <div class="col-span-12 xl:col-span-4 mt-6">
                         <div class="intro-y flex items-center h-10">
                             <h2 class="text-lg font-medium truncate ml-5">
                                بهترین فروشنده هفتگی
@@ -260,10 +270,10 @@
                             </div>
                             <a href="" class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-theme-15 dark:border-dark-5 text-theme-16 dark:text-gray-600">مشاهده بیشتر</a> 
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: Weekly Best Sellers -->
                     <!-- BEGIN: General Report -->
-                    <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
+                    {{-- <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
                         <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
                             <div class="box p-5 zoom-in">
                                 <div class="flex items-center">
@@ -314,10 +324,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: General Report -->
                     <!-- BEGIN: Weekly Top Products -->
-                    <div class="col-span-12 mt-6">
+                    {{-- <div class="col-span-12 mt-6">
                         <div class="intro-y block sm:flex items-center h-10">
                             <h2 class="text-lg font-medium truncate ml-5">
                                 محصولات برتر هفته
@@ -485,11 +495,11 @@
                                 <option>50</option>
                             </select>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- END: Weekly Top Products -->
                 </div>
             </div>
-            <div class="col-span-12 xxl:col-span-3">
+            {{-- <div class="col-span-12 xxl:col-span-3">
                 <div class="xxl:border-l border-theme-5 -mb-10 pb-10">
                     <div class="xxl:pl-6 grid grid-cols-12 gap-6">
                         <!-- BEGIN: Transactions -->
@@ -784,7 +794,7 @@
                         <!-- END: Schedules -->
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <!-- END: Content -->

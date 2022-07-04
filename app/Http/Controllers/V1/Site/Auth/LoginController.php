@@ -34,8 +34,9 @@ class LoginController extends Controller
             {
                 return view('pages.site.auth.reset-password-3');
             }
+            return redirect(route('home'));
             
-            return view('pages.site.profile.profile');
+            
         }
    
     }
@@ -51,6 +52,8 @@ class LoginController extends Controller
         
         Auth::logout();
 
-        return redirect('login');
+        return redirect(route('login'));
     }
+
+    
 }

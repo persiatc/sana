@@ -2,13 +2,14 @@
 namespace App;
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\V1\Site\HomeController;
 use App\Http\Controllers\V1\Site\Auth\LoginController;
 use App\Http\Controllers\V1\Site\Auth\RegisterController;
 use App\Http\Controllers\V1\Site\Auth\ResetPasswordController;
 
 Route::get('/', function () {
-    // auth()->logout();
-    return view('pages.site.index');
+    auth()->logout();
+    return view('pages.site.auth.login');
 });
 
 /* -------------------------------------------------------------------------- */
@@ -23,6 +24,8 @@ Route::prefix('auth')->group(function(){
         Route::get('login', 'showLogin')->name('login');
         Route::post('login', 'login');
         Route::get('logout', 'logout')->name('logout');
+        Route::get('dashboard', 'dashboard')->name('dashboard');
+
 
     });
     Route::controller(ResetPasswordController::class)->middleware('auth')->group(function(){
@@ -34,4 +37,9 @@ Route::prefix('auth')->group(function(){
         Route::get('reset-password-page', 'showResetPasswordePage')->name('reset-password-page');
 
     });
+  
+});
+
+Route::controller(HomeController::class)->middleware('auth')->group(function(){
+    Route::get('home', 'home')->name('home');
 });

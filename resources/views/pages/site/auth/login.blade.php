@@ -12,12 +12,12 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- BEGIN: Head -->
     <head>
         <meta charset="utf-8">
-        <link href="/dist/images/logo.svg" rel="shortcut icon">
+        <link href="/dist/images/sana/favicon.ico" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Rubick admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
         <meta name="keywords" content="admin template, Rubick Admin Template, dashboard template, flat admin template, responsive admin template, web app">
         <meta name="author" content="LEFT4CODE">
-        <title>ورود - روبیک - قالب مدیریتی تیلوند اچ تی ام ال</title>
+        <title>ورود - سامانه سانا- ارتباطات پرشیا</title>
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" href="/dist/css/app.css" />
         <!-- END: CSS Assets-->
@@ -29,16 +29,16 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!-- BEGIN: Login Info -->
                 <div class="hidden xl:flex flex-col min-h-screen">
                     <a href="" class="-intro-x flex items-center pt-5">
-                        <img alt="Rubick Tailwind HTML Admin Template" class="w-6" src="/dist/images/logo.svg">
-                        <span class="text-white text-lg mr-3">رو<span class="font-medium">بیک</span> </span>
+                        <img alt="Rubick Tailwind HTML Admin Template" class="w-6" src="/dist/images/sana/logo/logo-light-sm.jpg">
+                        <span class="text-white text-lg mr-3">سامانه <span class="font-medium">سانا</span> </span>
                     </a>
                     <div class="my-auto">
                         <img alt="Rubick Tailwind HTML Admin Template" class="-intro-x w-1/2 -mt-16" src="/dist/images/illustration.svg">
                         <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">
-                            تنها چند کلیک
-                        <br> مانده تا ساخت اکانتتان
+                           سامانه نیروی انسانی
+                        <br>  ارتباطات پرشیا  
                         </div>
-                        <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-gray-500">تمامی اکانت های خود را در یک مکان مدیریت کنید</div>
+                        {{-- <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-gray-500">تمامی اکانت های خود را در یک مکان مدیریت کنید</div> --}}
                     </div>
                 </div>
                 <!-- END: Login Info -->
@@ -72,17 +72,17 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <input id="remember-me" type="checkbox" class="form-check-input border ml-2">
                                 <label class="cursor-pointer select-none" for="remember-me">مرا به خاطر داشته باش</label>
                             </div>
-                            <a href="">فراموشی رمز عبور؟</a> 
+                            {{-- <a href="">فراموشی رمز عبور؟</a>  --}}
                         </div>
                         <div class="intro-x mt-5 xl:mt-8 text-center xl:text-right">
                             <button class="btn btn-primary py-3 px-4 w-full xl:w-32 xl:ml-3 align-top">ورود</button>
-                            <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top">ثبت نام</button>
+                            {{-- <button class="btn btn-outline-secondary py-3 px-4 w-full xl:w-32 mt-3 xl:mt-0 align-top">ثبت نام</button> --}}
                         </div>
-                        <div class="intro-x mt-10 xl:mt-24 text-gray-700 dark:text-gray-600 text-center xl:text-right">
+                        {{-- <div class="intro-x mt-10 xl:mt-24 text-gray-700 dark:text-gray-600 text-center xl:text-right">
                             با ورود شما تمامی شرایط زیر را میپذیرید
                             <br>
                             <a class="text-theme-1 dark:text-theme-10" href="">قوانین و مقررات</a> و <a class="text-theme-1 dark:text-theme-10" href="">حریم شخصی</a> 
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </form>

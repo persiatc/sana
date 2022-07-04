@@ -1,12 +1,10 @@
  <!-- BEGIN: Side Menu -->
  <nav class="side-nav">
-    <a href="" class="intro-x flex items-center pr-5 pt-4">
-        <img alt="Rubick Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
-        <span class="hidden xl:block text-white text-lg mr-3">رو<span class="font-medium">بیک</span> </span>
-    </a>
+    @include('partials.topBarSide.logo')
+
     <div class="side-nav__devider my-6"></div>
     <ul>
-        <li>
+        {{-- <li>
             <a href="javascript:;.html" class="side-menu side-menu--active">
                 <div class="side-menu__icon"> <i data-feather="home"></i> </div>
                 <div class="side-menu__title">
@@ -63,45 +61,29 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
         <li>
-            <a href="side-menu-light-inbox.html" class="side-menu">
-                <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
-                <div class="side-menu__title"> صندوق ورودی </div>
+            <a href="{{route('home')}}" class="side-menu {{ (Request::is('home') ? 'side-menu--active' : '') }}">
+                <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                <div class="side-menu__title"> داشبرد </div>
             </a>
         </li>
+       
+       
         <li>
-            <a href="side-menu-light-file-manager.html" class="side-menu">
-                <div class="side-menu__icon"> <i data-feather="hard-drive"></i> </div>
-                <div class="side-menu__title"> مدیریت فایل </div>
-            </a>
-        </li>
-        <li>
-            <a href="side-menu-light-point-of-sale.html" class="side-menu">
-                <div class="side-menu__icon"> <i data-feather="credit-card"></i> </div>
-                <div class="side-menu__title"> نمای فروش </div>
-            </a>
-        </li>
-        <li>
-            <a href="side-menu-light-chat.html" class="side-menu">
-                <div class="side-menu__icon"> <i data-feather="message-square"></i> </div>
-                <div class="side-menu__title"> چت </div>
-            </a>
-        </li>
-        <li>
-            <a href="side-menu-light-post.html" class="side-menu">
+            <a href="#" class="side-menu">
                 <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
-                <div class="side-menu__title"> پست </div>
+                <div class="side-menu__title"> اطلاعیه ها </div>
             </a>
         </li>
         <li>
-            <a href="side-menu-light-calendar.html" class="side-menu">
-                <div class="side-menu__icon"> <i data-feather="calendar"></i> </div>
-                <div class="side-menu__title"> تقویم </div>
+            <a href="#" class="side-menu">
+                <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                <div class="side-menu__title"> فیش حقوقی </div>
             </a>
         </li>
         <li class="side-nav__devider my-6"></li>
-        <li>
+        {{-- <li>
             <a href="javascript:;" class="side-menu">
                 <div class="side-menu__icon"> <i data-feather="edit"></i> </div>
                 <div class="side-menu__title">
@@ -123,8 +105,8 @@
                     </a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> --}}
+        {{-- <li>
             <a href="javascript:;" class="side-menu">
                 <div class="side-menu__icon"> <i data-feather="users"></i> </div>
                 <div class="side-menu__title">
@@ -152,37 +134,39 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
         <li>
-            <a href="javascript:;" class="side-menu">
+            <a href="javascript:;" class="side-menu {{ (Request::is('auth/reset-password-page') ? 'side-menu--active' : '') }}">
                 <div class="side-menu__icon"> <i data-feather="trello"></i> </div>
                 <div class="side-menu__title">
                     پروفایل 
-                    <div class="side-menu__sub-icon "> <i data-feather="chevron-down"></i> </div>
+                    <div class="side-menu__sub-icon {{ (Request::is('auth/reset-password-page') ? 'transform rotate-180' : '') }}"> 
+                        <i data-feather="chevron-down"></i> 
+                    </div>
                 </div>
             </a>
-            <ul class="">
+            <ul class="{{ (Request::is('auth/reset-password-page') ? 'side-menu__sub-open' : '') }}">
                 <li>
-                    <a href="side-menu-light-profile-overview-1.html" class="side-menu">
+                    <a href="{{route('reset-password-page')}}" class="side-menu {{ (Request::is('auth/reset-password-page') ? 'side-menu--active' : '') }}">
                         <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                        <div class="side-menu__title"> نمای کل 1 </div>
+                        <div class="side-menu__title">بازیابی رمز عبور</div>
                     </a>
                 </li>
                 <li>
-                    <a href="side-menu-light-profile-overview-2.html" class="side-menu">
+                    <a href="#" class="side-menu">
                         <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                        <div class="side-menu__title"> نمای کل 2 </div>
+                        <div class="side-menu__title"> اطلاعات کاربری </div>
                     </a>
                 </li>
                 <li>
-                    <a href="side-menu-light-profile-overview-3.html" class="side-menu">
+                    <a href="{{route('logout')}}" class="side-menu">
                         <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                        <div class="side-menu__title"> نمای کل 3 </div>
+                        <div class="side-menu__title">خروج </div>
                     </a>
                 </li>
             </ul>
         </li>
-        <li>
+        {{-- <li>
             <a href="javascript:;" class="side-menu">
                 <div class="side-menu__icon"> <i data-feather="layout"></i> </div>
                 <div class="side-menu__title">
@@ -549,7 +533,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
     </ul>
 </nav>
 <!-- END: Side Menu -->
