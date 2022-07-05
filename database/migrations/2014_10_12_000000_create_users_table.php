@@ -25,6 +25,7 @@ return new class extends Migration
             $table->enum('gender', ['male', 'female'])->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamp('phone_verified_at')->nullable();
+            $table->timestamp('last_seen')->nullable();
             $table->string('password');
             $table->timestamp('password_update_at')->nullable();
             $table->boolean('active')->default(false);
